@@ -20,15 +20,15 @@ public class lab3{
     //Then, check if the number of elements present in the array is even or odd
     //If odd, then simply return the mid value of the array
     //Else, the median is the average of the two middle values
-    static int median_func(int[] numArray,int n){
+    static double median_func(int[] numArray,int n){
          // First we sort the array
          Arrays.sort(numArray);
  
          // check for even case
          if (n % 2 != 0)
-             return numArray[n / 2];
+             return numArray[(int)n / 2];
   
-         return (numArray[(n - 1) / 2] + numArray[n / 2] )/ 2;
+         return (numArray[(n - 1) / 2] + numArray[n / 2] )/ 2.0;
     }
     
     //Function to find mode value on user input array
